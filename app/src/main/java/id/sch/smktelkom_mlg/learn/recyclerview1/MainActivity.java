@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
             arFoto[i] = a.getDrawable(i);
         }
-
+        a.recycle();
 
         for (int i = 0; i < arJudul.length; i++) {
             mList.add(new Hotel(arJudul[i], arDeskripsi[i], arFoto[i]));
